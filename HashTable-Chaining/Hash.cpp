@@ -87,7 +87,6 @@ void Hash::PrintHashTable()
 
 void Hash::SearchName(string Name)
 {
-	bool check = false;
 	if (HashTable[HashFunction(Name)]->name == Name) {
 		cout << "Name is:" << HashTable[HashFunction(Name)]->name << endl;
 		cout << "Balance is:" << HashTable[HashFunction(Name)]->balance << endl;
